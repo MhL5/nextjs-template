@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "validate-messages": "bunx @lingual/i18n-check@latest --source en --locales messages"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.13.10",

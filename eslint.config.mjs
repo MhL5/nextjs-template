@@ -1,6 +1,6 @@
-import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
+import { defineConfig, globalIgnores } from "eslint/config";
 
 const eslintConfig = defineConfig([
   ...nextVitals,
@@ -15,6 +15,7 @@ const eslintConfig = defineConfig([
   ]),
   {
     rules: {
+      "react/jsx-no-literals": "warn",
       "no-console": "warn",
       "no-restricted-imports": [
         "error",
@@ -27,6 +28,16 @@ const eslintConfig = defineConfig([
           name: "next/link",
           message: "Please import Link from `@/components/ui/link` instead.",
           importNames: ["default"],
+        },
+        {
+          name: "next/navigation",
+          importNames: [
+            "redirect",
+            "permanentRedirect",
+            "useRouter",
+            "usePathname",
+          ],
+          message: "Please import from `@/i18n/navigation` instead.",
         },
       ],
       "@typescript-eslint/naming-convention": [

@@ -1,17 +1,26 @@
-"use client";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+// Root page has no locale context, so we can't use next-intl redirect
+// eslint-disable-next-line
+import { redirect } from "next/navigation";
 
-import { Button } from "@/components/ui/button";
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations({
+    locale: "en",
+    namespace: "app./.metadata",
+  });
 
-export default function Test() {
-  async function handleClick() {}
+  return {
+    title: t("title"),
+    description: t("description"),
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
+}
 
-  return (
-    <section className="grid min-h-dvh w-full place-items-center">
-      <div>
-        <Button size="lg" onClick={handleClick}>
-          Click me{" "}
-        </Button>
-      </div>
-    </section>
-  );
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect("/en");
 }
