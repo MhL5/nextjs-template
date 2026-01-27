@@ -20,7 +20,15 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "pretty": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "verbatimModuleSyntax": true
   },
   "include": [
     "next-env.d.ts",
