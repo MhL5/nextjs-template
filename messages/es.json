@@ -1,0 +1,41 @@
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "Crear aplicación Next",
+        "description": "Generado con create next app"
+      },
+      "loading": {
+        "ariaLabel": "cargando..."
+      },
+      "not-found": {
+        "title": "Nada que ver aquí",
+        "description": "La página que intenta abrir no existe. Es posible que haya escrito mal la dirección o que la página se haya movido a otra URL. Si cree que es un error, contacte con soporte.",
+        "homeButtonLabel": "Inicio",
+        "contactSupport": "Contactar soporte",
+        "goBackButtonLabel": "Volver",
+        "needHelp": "¿Necesita ayuda?"
+      },
+      "error": {
+        "title": "Algo salió mal...",
+        "description": "Hemos encontrado un error inesperado. Por favor, inténtelo de nuevo o contacte con soporte si el problema persiste.",
+        "homeButtonLabel": "Inicio",
+        "contactSupport": "Contactar soporte",
+        "needHelp": "¿Necesita ayuda?",
+        "tryAgainButtonLabel": "Intentar de nuevo"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "Plantilla Next.js"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "Tabla de contenidos"
+      }
+    }
+  }
+}

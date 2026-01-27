@@ -1,1 +1,41 @@
-{}
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "Next-App erstellen",
+        "description": "Erstellt mit create next app"
+      },
+      "loading": {
+        "ariaLabel": "wird geladen..."
+      },
+      "not-found": {
+        "title": "Hier gibt es nichts zu sehen",
+        "description": "Die Seite, die Sie aufrufen möchten, existiert nicht. Möglicherweise wurde die Adresse falsch eingegeben oder die Seite wurde verschoben. Wenn Sie glauben, dass dies ein Fehler ist, kontaktieren Sie bitte den Support.",
+        "homeButtonLabel": "Startseite",
+        "contactSupport": "Support kontaktieren",
+        "goBackButtonLabel": "Zurück",
+        "needHelp": "Brauchen Sie Hilfe?"
+      },
+      "error": {
+        "title": "Etwas ist schiefgelaufen...",
+        "description": "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie den Support, falls das Problem weiterhin besteht.",
+        "homeButtonLabel": "Startseite",
+        "contactSupport": "Support kontaktieren",
+        "needHelp": "Brauchen Sie Hilfe?",
+        "tryAgainButtonLabel": "Erneut versuchen"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "Next.js Vorlage"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "Inhaltsverzeichnis"
+      }
+    }
+  }
+}

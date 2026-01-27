@@ -1,7 +1,7 @@
 import { clientEnv } from "@/env/clientEnv";
 import { isProd } from "@/utils/checks";
 
-export const domainUrl = isProd()
+const domainUrl = isProd()
   ? clientEnv.NEXT_PUBLIC_FRONTEND_DOMAIN
   : `http://localhost:${process.env.PORT || 3000}`;
 

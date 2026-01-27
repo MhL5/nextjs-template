@@ -1,0 +1,41 @@
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "Next Uygulaması Oluştur",
+        "description": "create next app tarafından oluşturuldu"
+      },
+      "loading": {
+        "ariaLabel": "yükleniyor..."
+      },
+      "not-found": {
+        "title": "Burada görülecek bir şey yok",
+        "description": "Açmaya çalıştığınız sayfa mevcut değil. Adresi yanlış yazmış olabilir veya sayfa başka bir URL’ye taşınmış olabilir. Bunun bir hata olduğunu düşünüyorsanız destek ile iletişime geçin.",
+        "homeButtonLabel": "Ana Sayfa",
+        "contactSupport": "Destek ile iletişime geç",
+        "goBackButtonLabel": "Geri dön",
+        "needHelp": "Yardıma mı ihtiyacınız var?"
+      },
+      "error": {
+        "title": "Bir şeyler ters gitti...",
+        "description": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin veya sorun devam ederse destek ile iletişime geçin.",
+        "homeButtonLabel": "Ana Sayfa",
+        "contactSupport": "Destek ile iletişime geç",
+        "needHelp": "Yardıma mı ihtiyacınız var?",
+        "tryAgainButtonLabel": "Tekrar dene"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "Next.js Şablonu"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "İçindekiler"
+      }
+    }
+  }
+}

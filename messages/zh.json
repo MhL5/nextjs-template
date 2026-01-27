@@ -1,0 +1,41 @@
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "创建 Next 应用",
+        "description": "由 create next app 生成"
+      },
+      "loading": {
+        "ariaLabel": "加载中..."
+      },
+      "not-found": {
+        "title": "这里什么也没有",
+        "description": "您尝试打开的页面不存在。可能是地址输入错误，或页面已被移动。如果您认为这是错误，请联系支持。",
+        "homeButtonLabel": "首页",
+        "contactSupport": "联系支持",
+        "goBackButtonLabel": "返回",
+        "needHelp": "需要帮助？"
+      },
+      "error": {
+        "title": "发生了一些错误...",
+        "description": "我们遇到了一个意外错误。请重试，如果问题仍然存在，请联系支持。",
+        "homeButtonLabel": "首页",
+        "contactSupport": "联系支持",
+        "needHelp": "需要帮助？",
+        "tryAgainButtonLabel": "重试"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "Next.js 模板"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "目录"
+      }
+    }
+  }
+}

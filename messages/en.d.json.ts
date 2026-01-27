@@ -33,6 +33,13 @@ declare const messages: {
         }
       }
     }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "Table of contents"
+      }
+    }
   }
 };
 export default messages;

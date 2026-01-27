@@ -1,0 +1,41 @@
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "إنشاء تطبيق Next",
+        "description": "تم الإنشاء باستخدام create next app"
+      },
+      "loading": {
+        "ariaLabel": "جاري التحميل..."
+      },
+      "not-found": {
+        "title": "لا يوجد شيء هنا",
+        "description": "الصفحة التي تحاول فتحها غير موجودة. ربما أدخلت العنوان بشكل خاطئ أو تم نقل الصفحة إلى رابط آخر. إذا كنت تعتقد أن هذا خطأ، يرجى التواصل مع الدعم.",
+        "homeButtonLabel": "الرئيسية",
+        "contactSupport": "اتصل بالدعم",
+        "goBackButtonLabel": "العودة",
+        "needHelp": "هل تحتاج مساعدة؟"
+      },
+      "error": {
+        "title": "حدث خطأ ما...",
+        "description": "واجهنا خطأ غير متوقع. يرجى المحاولة مرة أخرى أو التواصل مع الدعم إذا استمرت المشكلة.",
+        "homeButtonLabel": "الرئيسية",
+        "contactSupport": "اتصل بالدعم",
+        "needHelp": "هل تحتاج مساعدة؟",
+        "tryAgainButtonLabel": "حاول مرة أخرى"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "قالب Next.js"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "جدول المحتويات"
+      }
+    }
+  }
+}

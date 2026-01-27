@@ -1,0 +1,41 @@
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "Next ऐप बनाएँ",
+        "description": "create next app द्वारा जनरेट किया गया"
+      },
+      "loading": {
+        "ariaLabel": "लोड हो रहा है..."
+      },
+      "not-found": {
+        "title": "यहाँ कुछ नहीं है",
+        "description": "जिस पेज को आप खोलने की कोशिश कर रहे हैं वह मौजूद नहीं है। हो सकता है पता गलत हो या पेज किसी और URL पर चला गया हो। अगर आपको लगता है कि यह एक त्रुटि है, तो सपोर्ट से संपर्क करें।",
+        "homeButtonLabel": "होम",
+        "contactSupport": "सपोर्ट से संपर्क करें",
+        "goBackButtonLabel": "वापस जाएँ",
+        "needHelp": "मदद चाहिए?"
+      },
+      "error": {
+        "title": "कुछ गलत हो गया...",
+        "description": "हमें एक अप्रत्याशित त्रुटि मिली है। कृपया फिर से प्रयास करें या समस्या बनी रहने पर सपोर्ट से संपर्क करें।",
+        "homeButtonLabel": "होम",
+        "contactSupport": "सपोर्ट से संपर्क करें",
+        "needHelp": "मदद चाहिए?",
+        "tryAgainButtonLabel": "फिर से कोशिश करें"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "Next.js टेम्पलेट"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "विषय सूची"
+      }
+    }
+  }
+}

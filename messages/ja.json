@@ -1,0 +1,41 @@
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "Nextアプリを作成",
+        "description": "create next app により生成"
+      },
+      "loading": {
+        "ariaLabel": "読み込み中..."
+      },
+      "not-found": {
+        "title": "ここには何もありません",
+        "description": "開こうとしているページは存在しません。アドレスが間違っているか、別のURLに移動した可能性があります。エラーだと思われる場合はサポートに連絡してください。",
+        "homeButtonLabel": "ホーム",
+        "contactSupport": "サポートに連絡",
+        "goBackButtonLabel": "戻る",
+        "needHelp": "お困りですか？"
+      },
+      "error": {
+        "title": "問題が発生しました...",
+        "description": "予期しないエラーが発生しました。再試行するか、問題が解決しない場合はサポートに連絡してください。",
+        "homeButtonLabel": "ホーム",
+        "contactSupport": "サポートに連絡",
+        "needHelp": "お困りですか？",
+        "tryAgainButtonLabel": "再試行"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "Next.js テンプレート"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "目次"
+      }
+    }
+  }
+}

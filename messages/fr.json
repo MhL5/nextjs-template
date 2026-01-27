@@ -1,0 +1,41 @@
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "Créer une application Next",
+        "description": "Généré avec create next app"
+      },
+      "loading": {
+        "ariaLabel": "chargement..."
+      },
+      "not-found": {
+        "title": "Rien à voir ici",
+        "description": "La page que vous essayez d’ouvrir n’existe pas. Vous avez peut-être mal saisi l’adresse ou la page a été déplacée. Si vous pensez qu’il s’agit d’une erreur, contactez le support.",
+        "homeButtonLabel": "Accueil",
+        "contactSupport": "Contacter le support",
+        "goBackButtonLabel": "Retour",
+        "needHelp": "Besoin d’aide"
+      },
+      "error": {
+        "title": "Une erreur est survenue...",
+        "description": "Nous avons rencontré une erreur inattendue. Veuillez réessayer ou contacter le support si le problème persiste.",
+        "homeButtonLabel": "Accueil",
+        "contactSupport": "Contacter le support",
+        "needHelp": "Besoin d’aide",
+        "tryAgainButtonLabel": "Réessayer"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "Modèle Next.js"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "Table des matières"
+      }
+    }
+  }
+}

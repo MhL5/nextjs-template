@@ -1,0 +1,41 @@
+{
+  "app": {
+    "/": {
+      "metadata": {
+        "title": "Cipta Aplikasi Next",
+        "description": "Dijana oleh create next app"
+      },
+      "loading": {
+        "ariaLabel": "memuatkan..."
+      },
+      "not-found": {
+        "title": "Tiada apa untuk dilihat di sini",
+        "description": "Halaman yang anda cuba buka tidak wujud. Anda mungkin tersalah taip alamat atau halaman telah dipindahkan. Jika anda fikir ini adalah ralat, hubungi sokongan.",
+        "homeButtonLabel": "Laman Utama",
+        "contactSupport": "Hubungi Sokongan",
+        "goBackButtonLabel": "Kembali",
+        "needHelp": "Perlukan bantuan?"
+      },
+      "error": {
+        "title": "Sesuatu yang buruk telah berlaku...",
+        "description": "Kami menghadapi ralat yang tidak dijangka. Sila cuba lagi atau hubungi sokongan jika masalah berterusan.",
+        "homeButtonLabel": "Laman Utama",
+        "contactSupport": "Hubungi Sokongan",
+        "needHelp": "Perlukan bantuan?",
+        "tryAgainButtonLabel": "Cuba Lagi"
+      },
+      "page": {
+        "heroSection": {
+          "h1": "Templat Next.js"
+        }
+      }
+    }
+  },
+  "components": {
+    "utils": {
+      "MdxRemoteServer": {
+        "tableOfContents": "Kandungan"
+      }
+    }
+  }
+}

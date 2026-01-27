@@ -33,6 +33,7 @@ export default async function Layout({
 
   return (
     <html
+      dir={validatedLocale === "ar" ? "rtl" : "ltr"}
       lang={validatedLocale}
       className={inter.variable}
       suppressHydrationWarning

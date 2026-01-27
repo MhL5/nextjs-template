@@ -1,11 +1,10 @@
 "use client";
 
-import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { CONTACT_SUPPORT_LINK } from "@/constants";
 import { cn } from "@/lib/utils";
 import { isDev } from "@/utils/checks";
-import { ArrowLeft, Circle, Home, RotateCcw } from "lucide-react";
+import { ArrowLeft, BotIcon, Circle, Home, RotateCcw } from "lucide-react";
 import type { Route } from "next";
 // we don't have access to next-intl inside root level fallback pages
 // eslint-disable-next-line no-restricted-imports
@@ -144,7 +143,9 @@ function LoadingPage({
       <div className="isolate grid grid-cols-1 grid-rows-1 place-items-center">
         <Circle className="z-10 col-start-1 row-start-1 size-22 animate-circleSvgGrow bg-transparent stroke-1 text-primary [--circumference:572px]" />
 
-        <Logo className="z-10 col-start-1 row-start-1 size-19 animate-loadingFadeIn rounded-full bg-primary p-1 opacity-0 starting:opacity-0" />
+        <div className="z-10 col-start-1 row-start-1 grid size-19 animate-loadingFadeIn place-items-center rounded-full bg-primary p-1 opacity-0 starting:opacity-0">
+          <BotIcon className="size-12" />
+        </div>
 
         <div className="col-start-1 col-end-1 row-start-1 row-end-1 h-20 w-20 animate-pingMd rounded-full bg-primary/80 delay-1000 starting:opacity-0" />
         <div className="col-start-1 col-end-1 row-start-1 row-end-1 h-20 w-20 animate-pingSm rounded-full bg-primary/80 delay-1000 starting:opacity-0" />
