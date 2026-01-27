@@ -1,6 +1,5 @@
 import { validateAndSetLocale } from "@/i18n/utils/validateLocale";
 import Providers from "@/providers/Providers";
-import "@/styles/globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 

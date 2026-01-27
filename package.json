@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "bun test",
     "typecheck": "next typegen && tsc --noEmit",
     "validate-messages": "bunx @lingual/i18n-check@latest --source en --locales messages"
   },

@@ -1,11 +1,13 @@
-"use client";
+import HeroSection from "@/app/[locale]/(with-navigation)/_components/HeroSection";
+import { validateAndSetLocale } from "@/i18n/utils/validateLocale";
 
-export default function Page() {
+export default async function Page({ params }: PageProps<"/[locale]">) {
+  const { locale } = await params;
+  validateAndSetLocale(locale);
+
   return (
-    <section className="grid min-h-dvh w-full place-items-center">
-      <div>
-        <h1>Next js Template</h1>
-      </div>
-    </section>
+    <>
+      <HeroSection />
+    </>
   );
 }
