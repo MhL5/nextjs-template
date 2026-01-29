@@ -30,6 +30,11 @@ const eslintConfig = defineConfig([
           importNames: ["default"],
         },
         {
+          name: "@/i18n/navigation",
+          message: "Please import  Link from `@/components/ui/link` instead.",
+          importNames: ["Link"],
+        },
+        {
           name: "next/navigation",
           importNames: [
             "redirect",

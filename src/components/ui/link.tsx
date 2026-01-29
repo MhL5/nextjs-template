@@ -1,4 +1,5 @@
 import { buttonVariants } from "@/components/ui/button";
+// eslint-disable-next-line no-restricted-imports
 import { Link as I18nLink } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import type { VariantProps } from "class-variance-authority";

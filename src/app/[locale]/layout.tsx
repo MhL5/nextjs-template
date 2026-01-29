@@ -36,10 +36,12 @@ export default async function Layout({
       dir={validatedLocale === "ar" ? "rtl" : "ltr"}
       lang={validatedLocale}
       className={inter.variable}
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-w-87.5 antialiased`}
+        id="body"
       >
         <Providers>{children}</Providers>
       </body>

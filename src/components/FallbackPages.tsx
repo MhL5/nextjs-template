@@ -70,7 +70,7 @@ function FallbackPages({
         </header>
 
         <nav
-          className="flex w-full flex-col items-center justify-center gap-3 capitalize sm:flex-row [&_a]:w-full [&_a]:basis-[calc(50%-0.375rem)] [&_button]:w-full [&_button]:basis-[calc(50%-0.375rem)]"
+          className="flex w-full flex-row items-center justify-center gap-3 capitalize [&_a]:w-full [&_a]:basis-[calc(50%-0.375rem)] [&_button]:w-full [&_button]:basis-[calc(50%-0.375rem)]"
           aria-label="actions"
         >
           <Button asChild variant="outline" className="capitalize">

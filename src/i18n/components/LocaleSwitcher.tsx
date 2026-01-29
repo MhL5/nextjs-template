@@ -12,6 +12,7 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { getLocaleName } from "@/i18n/utils/getLocaleName";
 import { cn } from "@/lib/utils";
+import { ChevronDown } from "lucide-react";
 import { type Locale, useLocale } from "next-intl";
 import { useParams } from "next/navigation";
 import { type ComponentProps, useState, useTransition } from "react";
@@ -62,6 +63,10 @@ export default function LocaleSwitcher({
             localeName={getLocaleName(currentLocale)}
           />
           <span className="uppercase">{currentLocale}</span>
+
+          <ChevronDown
+            className={`${show ? "rotate-180" : ""} ms-auto size-4.25 transition-transform duration-200`}
+          />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent

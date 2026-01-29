@@ -28,8 +28,25 @@ declare const messages: {
         "tryAgainButtonLabel": "Try Again"
       },
       "page": {
-        "heroSection": {
+        "HeroSection": {
           "h1": "Next Js Template"
+        }
+      },
+      "layout": {
+        "SiteHeader": {
+          "links": {
+            "blogs": "blogs",
+            "blogExample": "blog example",
+            "admin": "admin"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "page": {
+        "BlogsSection": {
+          "title": "Blog Posts",
+          "description": "Discover the latest trends, tips, and best practices in modern web development. From UI components to design systems, stay updated with our expert insights."
         }
       }
     }
@@ -39,6 +56,9 @@ declare const messages: {
       "MdxRemoteServer": {
         "tableOfContents": "Table of contents"
       }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "Toggle theme"
     }
   }
 };

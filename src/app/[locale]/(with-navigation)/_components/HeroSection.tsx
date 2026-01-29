@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 export default async function HeroSection() {
-  const t = await getTranslations("app./.page.heroSection");
+  const t = await getTranslations("app./.page.HeroSection");
 
   return (
     <section className="grid min-h-dvh w-full place-items-center">
