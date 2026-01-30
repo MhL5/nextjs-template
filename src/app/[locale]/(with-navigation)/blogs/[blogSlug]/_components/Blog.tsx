@@ -43,7 +43,6 @@ export default function Blogpost({
         <h3 className="max-w-3xl text-lg text-muted-foreground md:text-xl">
           {description}
         </h3>
-
         <div className="flex items-center gap-3 text-sm md:text-base">
           <Avatar className="h-8 w-8 border">
             <AvatarImage src={authorImage} />

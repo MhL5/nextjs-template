@@ -6,8 +6,8 @@ export default async function Page({ params }: PageProps<"/[locale]">) {
   validateAndSetLocale(locale);
 
   return (
-    <div className="h-[150svh]">
+    <>
       <HeroSection />
-    </div>
+    </>
   );
 }

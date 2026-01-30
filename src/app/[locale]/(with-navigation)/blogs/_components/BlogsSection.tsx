@@ -70,7 +70,7 @@ export default async function BlogsSection({ className }: Blog7Props) {
             key={post.id}
             href="/blogs/example"
             variant="outline"
-            className="flex h-auto flex-col justify-start gap-6 overflow-hidden rounded-xl p-0 pb-6 text-start whitespace-normal"
+            className="flex h-auto flex-col justify-start gap-6 overflow-hidden rounded-xl p-0 px-0 pb-6 text-start whitespace-normal"
           >
             <Img
               width={600}

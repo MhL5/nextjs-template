@@ -24,7 +24,9 @@ export default function layout({ children }: LayoutProps<"/[locale]/admin">) {
             <LocaleSwitcher className="ms-auto" />
           </div>
         </header>
-        <div className="flex flex-1 flex-col gap-4 p-4 pt-0">{children}</div>
+        <div className="mx-auto flex w-full max-w-[1600px] flex-1 flex-col gap-4 p-4 pt-0">
+          {children}
+        </div>
       </SidebarInset>
     </SidebarProvider>
   );

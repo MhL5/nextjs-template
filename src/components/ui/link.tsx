@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 // eslint-disable-next-line no-restricted-imports
 import { Link as I18nLink } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
 import type { VariantProps } from "class-variance-authority";
 import type { ComponentProps } from "react";
 
@@ -27,11 +28,13 @@ function Link(props: LinkProps) {
       className={
         unStyled
           ? className
-          : buttonVariants({
-              variant: props.variant,
-              size: props.size,
-              className,
-            })
+          : cn(
+              buttonVariants({
+                variant: props.variant,
+                size: props.size,
+                className,
+              }),
+            )
       }
       {...rest}
     />
