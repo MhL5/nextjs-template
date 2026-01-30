@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Next ऐप बनाएँ",
         "description": "create next app द्वारा जनरेट किया गया"
@@ -24,9 +24,95 @@
         "needHelp": "मदद चाहिए?",
         "tryAgainButtonLabel": "फिर से कोशिश करें"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Next.js टेम्पलेट"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "ब्लॉग",
+            "blogExample": "ब्लॉग उदाहरण",
+            "admin": "व्यवस्थापन"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "ब्लॉग पोस्ट",
+          "description": "आधुनिक वेब विकास में नवीनतम ट्रेंड्स, टिप्स और बेस्ट प्रैक्टिसेस जानें। UI कंपोनेंट्स से लेकर डिज़ाइन सिस्टम तक, हमारे एक्सपर्ट इनसाइट्स के साथ अपडेट रहें।"
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "टॉगल",
+            "groupLabel": "प्लेटफ़ॉर्म",
+            "links": {
+              "toggle": "टॉगल",
+              "links": {
+                "playground": "प्लेग्राउंड",
+                "models": "मॉडल",
+                "documentation": "दस्तावेज़ीकरण",
+                "settings": "सेटिंग्स"
+              },
+              "subLinks": {
+                "history": "इतिहास",
+                "starred": "तारांकित",
+                "settings": "सेटिंग्स",
+                "genesis": "Genesis",
+                "explorer": "एक्सप्लोरर",
+                "quantum": "Quantum",
+                "introduction": "परिचय",
+                "getStarted": "शुरू करें",
+                "tutorials": "ट्यूटोरियल",
+                "changelog": "चेंजलॉग",
+                "general": "सामान्य",
+                "team": "टीम",
+                "billing": "बिलिंग",
+                "limits": "सीमाएँ"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Pro में अपग्रेड करें",
+            "account": "खाता",
+            "billing": "बिलिंग",
+            "notifications": "सूचनाएं",
+            "logOut": "लॉग आउट"
+          },
+          "NavProjects": {
+            "title": "प्रोजेक्ट",
+            "links": {
+              "designEngineering": "डिज़ाइन इंजीनियरिंग",
+              "salesMarketing": "बिक्री और मार्केटिंग",
+              "travel": "यात्रा"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "सहायता",
+              "feedback": "फीडबैक"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "{name} में आपका स्वागत है",
+          "description": "खाता नहीं है? <a>साइन अप करें</a>",
+          "email": "ईमेल",
+          "password": "पासवर्ड",
+          "login": "लॉग इन",
+          "or": "या",
+          "continueWithApple": "Apple के साथ जारी रखें",
+          "continueWithGoogle": "Google के साथ जारी रखें",
+          "termsOfServiceAndPrivacyPolicy": "जारी रखने पर आप हमारी <TermsOfServiceLink>सेवा की शर्तों</TermsOfServiceLink> और <PrivacyPolicyLink>गोपनीयता नीति</PrivacyPolicyLink> से सहमत होते हैं।"
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "विषय सूची"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "साइडबार",
+        "sidebarDescription": "साइडबार दिखाता है।",
+        "toggleSidebar": "साइडबार टॉगल करें"
+      },
+      "sheet": {
+        "close": "बंद करें"
+      },
+      "breadcrumb": {
+        "more": "और"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "थीम बदलें"
     }
   }
 }

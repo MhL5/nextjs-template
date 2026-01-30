@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Criar app Next",
         "description": "Gerado por create next app"
@@ -24,9 +24,95 @@
         "needHelp": "Precisa de ajuda?",
         "tryAgainButtonLabel": "Tentar novamente"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Modelo Next.js"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "Blogs",
+            "blogExample": "exemplo de blog",
+            "admin": "admin"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "Posts do blog",
+          "description": "Descubra as últimas tendências, dicas e melhores práticas no desenvolvimento web moderno. De componentes de interface a sistemas de design, mantenha-se atualizado com nossas análises de especialistas."
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "Alternar",
+            "groupLabel": "Plataforma",
+            "links": {
+              "toggle": "Alternar",
+              "links": {
+                "playground": "Playground",
+                "models": "Modelos",
+                "documentation": "Documentação",
+                "settings": "Configurações"
+              },
+              "subLinks": {
+                "history": "Histórico",
+                "starred": "Favoritos",
+                "settings": "Configurações",
+                "genesis": "Genesis",
+                "explorer": "Explorador",
+                "quantum": "Quantum",
+                "introduction": "Introdução",
+                "getStarted": "Começar",
+                "tutorials": "Tutoriais",
+                "changelog": "Registro de alterações",
+                "general": "Geral",
+                "team": "Equipe",
+                "billing": "Faturamento",
+                "limits": "Limites"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Atualizar para Pro",
+            "account": "Conta",
+            "billing": "Faturamento",
+            "notifications": "Notificações",
+            "logOut": "Sair"
+          },
+          "NavProjects": {
+            "title": "Projetos",
+            "links": {
+              "designEngineering": "Design e engenharia",
+              "salesMarketing": "Vendas e marketing",
+              "travel": "Viagens"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "Suporte",
+              "feedback": "Comentários"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "Bem-vindo ao {name}",
+          "description": "Não tem uma conta? <a>Cadastre-se</a>",
+          "email": "E-mail",
+          "password": "Senha",
+          "login": "Entrar",
+          "or": "Ou",
+          "continueWithApple": "Continuar com Apple",
+          "continueWithGoogle": "Continuar com Google",
+          "termsOfServiceAndPrivacyPolicy": "Ao continuar, você concorda com nossos <TermsOfServiceLink>Termos de Serviço</TermsOfServiceLink> e <PrivacyPolicyLink>Política de Privacidade</PrivacyPolicyLink>."
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "Sumário"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "Barra lateral",
+        "sidebarDescription": "Exibe a barra lateral.",
+        "toggleSidebar": "Alternar barra lateral"
+      },
+      "sheet": {
+        "close": "Fechar"
+      },
+      "breadcrumb": {
+        "more": "mais"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "Alternar tema"
     }
   }
 }

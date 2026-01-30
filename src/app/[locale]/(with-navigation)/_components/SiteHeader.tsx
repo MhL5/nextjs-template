@@ -42,7 +42,7 @@ const headerLinks = [
 export default function SiteHeader() {
   const headerRef = useRef<HTMLHeadElement>(null);
   const [showCollapsible, setShowCollapsible] = useState(false);
-  const t = useTranslations("app./.layout.SiteHeader.links");
+  const t = useTranslations("app./[locale].components.SiteHeader.links");
 
   useOnClickOutside(headerRef, () => setShowCollapsible(false));
   useEventListener(
@@ -152,7 +152,7 @@ function SiteHeaderCollapsibleTrigger({
 }
 
 function SiteHeaderCollapsibleContent() {
-  const t = useTranslations("app./.layout.SiteHeader.links");
+  const t = useTranslations("app./[locale].components.SiteHeader.links");
 
   return (
     <CollapsibleContent className="grid gap-1 py-3 capitalize">

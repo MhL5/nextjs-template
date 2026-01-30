@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Créer une application Next",
         "description": "Généré avec create next app"
@@ -10,23 +10,109 @@
       },
       "not-found": {
         "title": "Rien à voir ici",
-        "description": "La page que vous essayez d’ouvrir n’existe pas. Vous avez peut-être mal saisi l’adresse ou la page a été déplacée. Si vous pensez qu’il s’agit d’une erreur, contactez le support.",
+        "description": "La page que vous essayez d'ouvrir n'existe pas. Vous avez peut-être mal saisi l'adresse ou la page a été déplacée. Si vous pensez qu'il s'agit d'une erreur, contactez le support.",
         "homeButtonLabel": "Accueil",
         "contactSupport": "Contacter le support",
         "goBackButtonLabel": "Retour",
-        "needHelp": "Besoin d’aide"
+        "needHelp": "Besoin d'aide"
       },
       "error": {
         "title": "Une erreur est survenue...",
         "description": "Nous avons rencontré une erreur inattendue. Veuillez réessayer ou contacter le support si le problème persiste.",
         "homeButtonLabel": "Accueil",
         "contactSupport": "Contacter le support",
-        "needHelp": "Besoin d’aide",
+        "needHelp": "Besoin d'aide",
         "tryAgainButtonLabel": "Réessayer"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Modèle Next.js"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "Blogs",
+            "blogExample": "exemple de blog",
+            "admin": "admin"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "Articles du blog",
+          "description": "Découvrez les dernières tendances, conseils et bonnes pratiques du développement web moderne. Des composants d'interface aux systèmes de design, restez à jour avec nos analyses d'experts."
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "Basculer",
+            "groupLabel": "Plateforme",
+            "links": {
+              "toggle": "Basculer",
+              "links": {
+                "playground": "Playground",
+                "models": "Modèles",
+                "documentation": "Documentation",
+                "settings": "Paramètres"
+              },
+              "subLinks": {
+                "history": "Historique",
+                "starred": "Favoris",
+                "settings": "Paramètres",
+                "genesis": "Genesis",
+                "explorer": "Explorateur",
+                "quantum": "Quantum",
+                "introduction": "Introduction",
+                "getStarted": "Commencer",
+                "tutorials": "Tutoriels",
+                "changelog": "Journal des modifications",
+                "general": "Général",
+                "team": "Équipe",
+                "billing": "Facturation",
+                "limits": "Limites"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Passer à Pro",
+            "account": "Compte",
+            "billing": "Facturation",
+            "notifications": "Notifications",
+            "logOut": "Déconnexion"
+          },
+          "NavProjects": {
+            "title": "Projets",
+            "links": {
+              "designEngineering": "Design et ingénierie",
+              "salesMarketing": "Ventes et marketing",
+              "travel": "Voyage"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "Support",
+              "feedback": "Commentaires"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "Bienvenue sur {name}",
+          "description": "Pas encore de compte ? <a>Inscrivez-vous</a>",
+          "email": "E-mail",
+          "password": "Mot de passe",
+          "login": "Connexion",
+          "or": "Ou",
+          "continueWithApple": "Continuer avec Apple",
+          "continueWithGoogle": "Continuer avec Google",
+          "termsOfServiceAndPrivacyPolicy": "En continuant, vous acceptez nos <TermsOfServiceLink>Conditions d'utilisation</TermsOfServiceLink> et notre <PrivacyPolicyLink>Politique de confidentialité</PrivacyPolicyLink>."
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "Table des matières"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "Barre latérale",
+        "sidebarDescription": "Affiche la barre latérale.",
+        "toggleSidebar": "Basculer la barre latérale"
+      },
+      "sheet": {
+        "close": "Fermer"
+      },
+      "breadcrumb": {
+        "more": "plus"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "Changer le thème"
     }
   }
 }

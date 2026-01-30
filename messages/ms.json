@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Cipta Aplikasi Next",
         "description": "Dijana oleh create next app"
@@ -24,9 +24,95 @@
         "needHelp": "Perlukan bantuan?",
         "tryAgainButtonLabel": "Cuba Lagi"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Templat Next.js"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "Blog",
+            "blogExample": "contoh blog",
+            "admin": "admin"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "Catatan Blog",
+          "description": "Temui trend, tip dan amalan terbaik terkini dalam pembangunan web moden. Dari komponen UI hingga sistem reka bentuk, kekal dikemas kini dengan pandangan pakar kami."
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "Togol",
+            "groupLabel": "Platform",
+            "links": {
+              "toggle": "Togol",
+              "links": {
+                "playground": "Playground",
+                "models": "Model",
+                "documentation": "Dokumentasi",
+                "settings": "Tetapan"
+              },
+              "subLinks": {
+                "history": "Sejarah",
+                "starred": "Bertanda bintang",
+                "settings": "Tetapan",
+                "genesis": "Genesis",
+                "explorer": "Penjelajah",
+                "quantum": "Quantum",
+                "introduction": "Pengenalan",
+                "getStarted": "Mula",
+                "tutorials": "Tutorial",
+                "changelog": "Log perubahan",
+                "general": "Umum",
+                "team": "Pasukan",
+                "billing": "Pengebilan",
+                "limits": "Had"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Naik taraf ke Pro",
+            "account": "Akaun",
+            "billing": "Pengebilan",
+            "notifications": "Pemberitahuan",
+            "logOut": "Log keluar"
+          },
+          "NavProjects": {
+            "title": "Projek",
+            "links": {
+              "designEngineering": "Reka bentuk & kejuruteraan",
+              "salesMarketing": "Jualan & pemasaran",
+              "travel": "Perjalanan"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "Sokongan",
+              "feedback": "Maklum balas"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "Selamat datang ke {name}",
+          "description": "Belum mempunyai akaun? <a>Daftar</a>",
+          "email": "E-mel",
+          "password": "Kata laluan",
+          "login": "Log masuk",
+          "or": "Atau",
+          "continueWithApple": "Teruskan dengan Apple",
+          "continueWithGoogle": "Teruskan dengan Google",
+          "termsOfServiceAndPrivacyPolicy": "Dengan mengklik teruskan, anda bersetuju dengan <TermsOfServiceLink>Terma Perkhidmatan</TermsOfServiceLink> dan <PrivacyPolicyLink>Dasar Privasi</PrivacyPolicyLink> kami."
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "Kandungan"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "Bar sisi",
+        "sidebarDescription": "Memaparkan bar sisi.",
+        "toggleSidebar": "Togol bar sisi"
+      },
+      "sheet": {
+        "close": "Tutup"
+      },
+      "breadcrumb": {
+        "more": "lagi"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "Togol tema"
     }
   }
 }

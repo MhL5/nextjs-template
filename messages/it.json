@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Crea app Next",
         "description": "Generato con create next app"
@@ -9,8 +9,8 @@
         "ariaLabel": "caricamento..."
       },
       "not-found": {
-        "title": "Non c’è nulla da vedere qui",
-        "description": "La pagina che stai cercando di aprire non esiste. Potresti aver digitato male l’indirizzo o la pagina è stata spostata. Se pensi che sia un errore, contatta il supporto.",
+        "title": "Non c'è nulla da vedere qui",
+        "description": "La pagina che stai cercando di aprire non esiste. Potresti aver digitato male l'indirizzo o la pagina è stata spostata. Se pensi che sia un errore, contatta il supporto.",
         "homeButtonLabel": "Home",
         "contactSupport": "Contatta supporto",
         "goBackButtonLabel": "Indietro",
@@ -24,9 +24,95 @@
         "needHelp": "Hai bisogno di aiuto?",
         "tryAgainButtonLabel": "Riprova"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Template Next.js"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "Blog",
+            "blogExample": "esempio di blog",
+            "admin": "admin"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "Articoli del blog",
+          "description": "Scopri le ultime tendenze, consigli e best practice nello sviluppo web moderno. Dai componenti UI ai design system, resta aggiornato con le nostre analisi degli esperti."
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "Attiva/Disattiva",
+            "groupLabel": "Piattaforma",
+            "links": {
+              "toggle": "Attiva/Disattiva",
+              "links": {
+                "playground": "Playground",
+                "models": "Modelli",
+                "documentation": "Documentazione",
+                "settings": "Impostazioni"
+              },
+              "subLinks": {
+                "history": "Cronologia",
+                "starred": "Preferiti",
+                "settings": "Impostazioni",
+                "genesis": "Genesis",
+                "explorer": "Esplora",
+                "quantum": "Quantum",
+                "introduction": "Introduzione",
+                "getStarted": "Inizia",
+                "tutorials": "Tutorial",
+                "changelog": "Registro modifiche",
+                "general": "Generale",
+                "team": "Team",
+                "billing": "Fatturazione",
+                "limits": "Limiti"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Passa a Pro",
+            "account": "Account",
+            "billing": "Fatturazione",
+            "notifications": "Notifiche",
+            "logOut": "Esci"
+          },
+          "NavProjects": {
+            "title": "Progetti",
+            "links": {
+              "designEngineering": "Design e ingegneria",
+              "salesMarketing": "Vendite e marketing",
+              "travel": "Viaggi"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "Supporto",
+              "feedback": "Feedback"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "Benvenuto su {name}",
+          "description": "Non hai un account? <a>Registrati</a>",
+          "email": "Email",
+          "password": "Password",
+          "login": "Accedi",
+          "or": "Oppure",
+          "continueWithApple": "Continua con Apple",
+          "continueWithGoogle": "Continua con Google",
+          "termsOfServiceAndPrivacyPolicy": "Continuando, accetti i nostri <TermsOfServiceLink>Termini di servizio</TermsOfServiceLink> e <PrivacyPolicyLink>l'Informativa sulla privacy</PrivacyPolicyLink>."
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "Indice"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "Barra laterale",
+        "sidebarDescription": "Mostra la barra laterale.",
+        "toggleSidebar": "Attiva/Disattiva barra laterale"
+      },
+      "sheet": {
+        "close": "Chiudi"
+      },
+      "breadcrumb": {
+        "more": "altro"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "Cambia tema"
     }
   }
 }

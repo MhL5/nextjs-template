@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "创建 Next 应用",
         "description": "由 create next app 生成"
@@ -24,9 +24,95 @@
         "needHelp": "需要帮助？",
         "tryAgainButtonLabel": "重试"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Next.js 模板"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "博客",
+            "blogExample": "博客示例",
+            "admin": "管理"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "博客文章",
+          "description": "了解现代 Web 开发的最新趋势、技巧和最佳实践。从 UI 组件到设计系统，通过我们的专家见解保持更新。"
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "切换",
+            "groupLabel": "平台",
+            "links": {
+              "toggle": "切换",
+              "links": {
+                "playground": "演练场",
+                "models": "模型",
+                "documentation": "文档",
+                "settings": "设置"
+              },
+              "subLinks": {
+                "history": "历史",
+                "starred": "已加星标",
+                "settings": "设置",
+                "genesis": "Genesis",
+                "explorer": "资源管理器",
+                "quantum": "Quantum",
+                "introduction": "简介",
+                "getStarted": "入门",
+                "tutorials": "教程",
+                "changelog": "更新日志",
+                "general": "常规",
+                "team": "团队",
+                "billing": "账单",
+                "limits": "限制"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "升级到 Pro",
+            "account": "账户",
+            "billing": "账单",
+            "notifications": "通知",
+            "logOut": "退出登录"
+          },
+          "NavProjects": {
+            "title": "项目",
+            "links": {
+              "designEngineering": "设计与工程",
+              "salesMarketing": "销售与营销",
+              "travel": "旅行"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "支持",
+              "feedback": "反馈"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "欢迎使用 {name}",
+          "description": "还没有账号？<a>注册</a>",
+          "email": "邮箱",
+          "password": "密码",
+          "login": "登录",
+          "or": "或",
+          "continueWithApple": "使用 Apple 继续",
+          "continueWithGoogle": "使用 Google 继续",
+          "termsOfServiceAndPrivacyPolicy": "点击继续即表示您同意我们的 <TermsOfServiceLink>服务条款</TermsOfServiceLink> 和 <PrivacyPolicyLink>隐私政策</PrivacyPolicyLink>。"
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "目录"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "侧边栏",
+        "sidebarDescription": "显示侧边栏。",
+        "toggleSidebar": "切换侧边栏"
+      },
+      "sheet": {
+        "close": "关闭"
+      },
+      "breadcrumb": {
+        "more": "更多"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "切换主题"
     }
   }
 }

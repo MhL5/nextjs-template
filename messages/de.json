@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Next-App erstellen",
         "description": "Erstellt mit create next app"
@@ -24,9 +24,95 @@
         "needHelp": "Brauchen Sie Hilfe?",
         "tryAgainButtonLabel": "Erneut versuchen"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Next.js Vorlage"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "Blogs",
+            "blogExample": "Blog-Beispiel",
+            "admin": "Admin"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "Blogbeiträge",
+          "description": "Entdecken Sie die neuesten Trends, Tipps und Best Practices in der modernen Webentwicklung. Von UI-Komponenten bis zu Design-Systemen – bleiben Sie mit unseren Experten-Einblicken auf dem Laufenden."
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "Umschalten",
+            "groupLabel": "Plattform",
+            "links": {
+              "toggle": "Umschalten",
+              "links": {
+                "playground": "Spielwiese",
+                "models": "Modelle",
+                "documentation": "Dokumentation",
+                "settings": "Einstellungen"
+              },
+              "subLinks": {
+                "history": "Verlauf",
+                "starred": "Favoriten",
+                "settings": "Einstellungen",
+                "genesis": "Genesis",
+                "explorer": "Explorer",
+                "quantum": "Quantum",
+                "introduction": "Einführung",
+                "getStarted": "Erste Schritte",
+                "tutorials": "Tutorials",
+                "changelog": "Änderungsprotokoll",
+                "general": "Allgemein",
+                "team": "Team",
+                "billing": "Abrechnung",
+                "limits": "Limits"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Auf Pro upgraden",
+            "account": "Konto",
+            "billing": "Abrechnung",
+            "notifications": "Benachrichtigungen",
+            "logOut": "Abmelden"
+          },
+          "NavProjects": {
+            "title": "Projekte",
+            "links": {
+              "designEngineering": "Design & Engineering",
+              "salesMarketing": "Vertrieb & Marketing",
+              "travel": "Reisen"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "Support",
+              "feedback": "Feedback"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "Willkommen bei {name}",
+          "description": "Noch kein Konto? <a>Registrieren</a>",
+          "email": "E-Mail",
+          "password": "Passwort",
+          "login": "Anmelden",
+          "or": "Oder",
+          "continueWithApple": "Mit Apple fortfahren",
+          "continueWithGoogle": "Mit Google fortfahren",
+          "termsOfServiceAndPrivacyPolicy": "Mit dem Fortfahren stimmen Sie unseren <TermsOfServiceLink>Nutzungsbedingungen</TermsOfServiceLink> und der <PrivacyPolicyLink>Datenschutzrichtlinie</PrivacyPolicyLink> zu."
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "Inhaltsverzeichnis"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "Seitenleiste",
+        "sidebarDescription": "Zeigt die Seitenleiste an.",
+        "toggleSidebar": "Seitenleiste umschalten"
+      },
+      "sheet": {
+        "close": "Schließen"
+      },
+      "breadcrumb": {
+        "more": "mehr"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "Design umschalten"
     }
   }
 }

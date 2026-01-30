@@ -9,7 +9,7 @@ type ErrorProps = {
 };
 
 export default function Page({ error, reset }: ErrorProps) {
-  const t = useTranslations("app./.error");
+  const t = useTranslations("app./[locale].error");
 
   return (
     <ErrorPage

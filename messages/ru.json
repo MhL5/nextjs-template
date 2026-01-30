@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Создать приложение Next",
         "description": "Сгенерировано с помощью create next app"
@@ -24,9 +24,95 @@
         "needHelp": "Нужна помощь?",
         "tryAgainButtonLabel": "Попробовать снова"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Шаблон Next.js"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "Блоги",
+            "blogExample": "пример блога",
+            "admin": "админ"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "Записи блога",
+          "description": "Узнайте о последних трендах, советах и лучших практиках в современной веб-разработке. От UI-компонентов до дизайн-систем — оставайтесь в курсе с нашими экспертными материалами."
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "Переключить",
+            "groupLabel": "Платформа",
+            "links": {
+              "toggle": "Переключить",
+              "links": {
+                "playground": "Песочница",
+                "models": "Модели",
+                "documentation": "Документация",
+                "settings": "Настройки"
+              },
+              "subLinks": {
+                "history": "История",
+                "starred": "Избранное",
+                "settings": "Настройки",
+                "genesis": "Genesis",
+                "explorer": "Обозреватель",
+                "quantum": "Quantum",
+                "introduction": "Введение",
+                "getStarted": "Начать",
+                "tutorials": "Учебники",
+                "changelog": "История изменений",
+                "general": "Общие",
+                "team": "Команда",
+                "billing": "Оплата",
+                "limits": "Лимиты"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Перейти на Pro",
+            "account": "Аккаунт",
+            "billing": "Оплата",
+            "notifications": "Уведомления",
+            "logOut": "Выйти"
+          },
+          "NavProjects": {
+            "title": "Проекты",
+            "links": {
+              "designEngineering": "Дизайн и разработка",
+              "salesMarketing": "Продажи и маркетинг",
+              "travel": "Путешествия"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "Поддержка",
+              "feedback": "Обратная связь"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "Добро пожаловать в {name}",
+          "description": "Нет аккаунта? <a>Зарегистрироваться</a>",
+          "email": "Электронная почта",
+          "password": "Пароль",
+          "login": "Войти",
+          "or": "Или",
+          "continueWithApple": "Продолжить с Apple",
+          "continueWithGoogle": "Продолжить с Google",
+          "termsOfServiceAndPrivacyPolicy": "Нажимая «Продолжить», вы соглашаетесь с нашими <TermsOfServiceLink>Условиями использования</TermsOfServiceLink> и <PrivacyPolicyLink>Политикой конфиденциальности</PrivacyPolicyLink>."
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "Содержание"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "Боковая панель",
+        "sidebarDescription": "Отображает боковую панель.",
+        "toggleSidebar": "Переключить боковую панель"
+      },
+      "sheet": {
+        "close": "Закрыть"
+      },
+      "breadcrumb": {
+        "more": "ещё"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "Переключить тему"
     }
   }
 }

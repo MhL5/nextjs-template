@@ -2,7 +2,7 @@ import { NotFoundPage } from "@/components/FallbackPages";
 import { useTranslations } from "next-intl";
 
 export default function NotFound() {
-  const t = useTranslations("app./.not-found");
+  const t = useTranslations("app./[locale].not-found");
   return (
     <NotFoundPage
       contactSupport={t("contactSupport")}

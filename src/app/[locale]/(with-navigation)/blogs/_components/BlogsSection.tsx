@@ -44,7 +44,9 @@ const tempMockBlogs = [
 ];
 
 export default async function BlogsSection({ className }: Blog7Props) {
-  const t = await getTranslations("app./[locale]/blogs.page.BlogsSection");
+  const t = await getTranslations(
+    "app./[locale]/blogs.components.BlogsSection",
+  );
 
   return (
     <section

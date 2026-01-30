@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations({
     locale: "en",
-    namespace: "app./.metadata",
+    namespace: "app./[locale].metadata",
   });
 
   return {

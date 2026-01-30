@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Next Uygulaması Oluştur",
         "description": "create next app tarafından oluşturuldu"
@@ -10,7 +10,7 @@
       },
       "not-found": {
         "title": "Burada görülecek bir şey yok",
-        "description": "Açmaya çalıştığınız sayfa mevcut değil. Adresi yanlış yazmış olabilir veya sayfa başka bir URL’ye taşınmış olabilir. Bunun bir hata olduğunu düşünüyorsanız destek ile iletişime geçin.",
+        "description": "Açmaya çalıştığınız sayfa mevcut değil. Adresi yanlış yazmış olabilir veya sayfa başka bir URL'ye taşınmış olabilir. Bunun bir hata olduğunu düşünüyorsanız destek ile iletişime geçin.",
         "homeButtonLabel": "Ana Sayfa",
         "contactSupport": "Destek ile iletişime geç",
         "goBackButtonLabel": "Geri dön",
@@ -24,9 +24,95 @@
         "needHelp": "Yardıma mı ihtiyacınız var?",
         "tryAgainButtonLabel": "Tekrar dene"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Next.js Şablonu"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "Bloglar",
+            "blogExample": "blog örneği",
+            "admin": "yönetici"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "Blog Yazıları",
+          "description": "Modern web geliştirmede en son trendleri, ipuçlarını ve en iyi uygulamaları keşfedin. UI bileşenlerinden tasarım sistemlerine kadar uzman görüşlerimizle güncel kalın."
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "Değiştir",
+            "groupLabel": "Platform",
+            "links": {
+              "toggle": "Değiştir",
+              "links": {
+                "playground": "Oyun alanı",
+                "models": "Modeller",
+                "documentation": "Dokümantasyon",
+                "settings": "Ayarlar"
+              },
+              "subLinks": {
+                "history": "Geçmiş",
+                "starred": "Yıldızlı",
+                "settings": "Ayarlar",
+                "genesis": "Genesis",
+                "explorer": "Gezgin",
+                "quantum": "Quantum",
+                "introduction": "Giriş",
+                "getStarted": "Başlayın",
+                "tutorials": "Eğitimler",
+                "changelog": "Değişiklik günlüğü",
+                "general": "Genel",
+                "team": "Ekip",
+                "billing": "Faturalandırma",
+                "limits": "Limitler"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Pro'ya yükselt",
+            "account": "Hesap",
+            "billing": "Faturalandırma",
+            "notifications": "Bildirimler",
+            "logOut": "Çıkış yap"
+          },
+          "NavProjects": {
+            "title": "Projeler",
+            "links": {
+              "designEngineering": "Tasarım ve mühendislik",
+              "salesMarketing": "Satış ve pazarlama",
+              "travel": "Seyahat"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "Destek",
+              "feedback": "Geri bildirim"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "{name}'e hoş geldiniz",
+          "description": "Hesabınız yok mu? <a>Kayıt olun</a>",
+          "email": "E-posta",
+          "password": "Şifre",
+          "login": "Giriş yap",
+          "or": "veya",
+          "continueWithApple": "Apple ile devam et",
+          "continueWithGoogle": "Google ile devam et",
+          "termsOfServiceAndPrivacyPolicy": "Devam ederek <TermsOfServiceLink>Hizmet Şartları</TermsOfServiceLink> ve <PrivacyPolicyLink>Gizlilik Politikası</PrivacyPolicyLink>'mızı kabul etmiş olursunuz."
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "İçindekiler"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "Kenar çubuğu",
+        "sidebarDescription": "Kenar çubuğunu gösterir.",
+        "toggleSidebar": "Kenar çubuğunu değiştir"
+      },
+      "sheet": {
+        "close": "Kapat"
+      },
+      "breadcrumb": {
+        "more": "daha fazla"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "Temayı değiştir"
     }
   }
 }

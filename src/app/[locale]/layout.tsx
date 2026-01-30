@@ -8,14 +8,14 @@ const inter = localFont({
   variable: "--font-sans",
 });
 
-const geistSans = localFont({
-  src: "../../assets/fonts/Geist/Geist-VariableFont_wght.ttf",
-  variable: "--font-geist-sans",
-});
-
 const geistMono = localFont({
   src: "../../assets/fonts/Geist_Mono/GeistMono-VariableFont_wght.ttf",
   variable: "--font-geist-mono",
+});
+
+const vazirmatn = localFont({
+  src: "../../assets/fonts/Vazirmatn/Vazirmatn-VariableFont_wght.ttf",
+  variable: "--font-vazirmatn",
 });
 
 export const metadata: Metadata = {
@@ -31,18 +31,18 @@ export default async function Layout({
 
   const validatedLocale = validateAndSetLocale(locale);
 
+  const font = validatedLocale === "ar" ? vazirmatn : inter;
+  const fontMono = validatedLocale === "ar" ? vazirmatn : geistMono;
+
   return (
     <html
       dir={validatedLocale === "ar" ? "rtl" : "ltr"}
       lang={validatedLocale}
-      className={inter.variable}
+      className={font.variable}
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} min-w-87.5 antialiased`}
-        id="body"
-      >
+      <body className={`${fontMono.variable} min-w-87.5 antialiased`} id="body">
         <Providers>{children}</Providers>
       </body>
     </html>

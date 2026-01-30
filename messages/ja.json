@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "Nextアプリを作成",
         "description": "create next app により生成"
@@ -24,9 +24,95 @@
         "needHelp": "お困りですか？",
         "tryAgainButtonLabel": "再試行"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "Next.js テンプレート"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "ブログ",
+            "blogExample": "ブログ例",
+            "admin": "管理"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "ブログ記事",
+          "description": "モダンなWeb開発の最新トレンド、ヒント、ベストプラクティスをご紹介。UIコンポーネントからデザインシステムまで、専門家の洞察で最新情報をお届けします。"
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "切り替え",
+            "groupLabel": "プラットフォーム",
+            "links": {
+              "toggle": "切り替え",
+              "links": {
+                "playground": "プレイグラウンド",
+                "models": "モデル",
+                "documentation": "ドキュメント",
+                "settings": "設定"
+              },
+              "subLinks": {
+                "history": "履歴",
+                "starred": "お気に入り",
+                "settings": "設定",
+                "genesis": "Genesis",
+                "explorer": "エクスプローラー",
+                "quantum": "Quantum",
+                "introduction": "はじめに",
+                "getStarted": "はじめる",
+                "tutorials": "チュートリアル",
+                "changelog": "変更履歴",
+                "general": "一般",
+                "team": "チーム",
+                "billing": "請求",
+                "limits": "制限"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "Proにアップグレード",
+            "account": "アカウント",
+            "billing": "請求",
+            "notifications": "通知",
+            "logOut": "ログアウト"
+          },
+          "NavProjects": {
+            "title": "プロジェクト",
+            "links": {
+              "designEngineering": "デザインとエンジニアリング",
+              "salesMarketing": "営業とマーケティング",
+              "travel": "旅行"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "サポート",
+              "feedback": "フィードバック"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "{name}へようこそ",
+          "description": "アカウントをお持ちでないですか？<a>サインアップ</a>",
+          "email": "メールアドレス",
+          "password": "パスワード",
+          "login": "ログイン",
+          "or": "または",
+          "continueWithApple": "Appleで続ける",
+          "continueWithGoogle": "Googleで続ける",
+          "termsOfServiceAndPrivacyPolicy": "続行すると、<TermsOfServiceLink>利用規約</TermsOfServiceLink>と<PrivacyPolicyLink>プライバシーポリシー</PrivacyPolicyLink>に同意したことになります。"
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "目次"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "サイドバー",
+        "sidebarDescription": "サイドバーを表示します。",
+        "toggleSidebar": "サイドバーを切り替え"
+      },
+      "sheet": {
+        "close": "閉じる"
+      },
+      "breadcrumb": {
+        "more": "その他"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "テーマを切り替え"
     }
   }
 }

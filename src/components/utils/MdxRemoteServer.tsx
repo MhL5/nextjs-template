@@ -1,4 +1,4 @@
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/components/ui/link";
 import { getTranslations } from "next-intl/server";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import type { ComponentProps } from "react";
@@ -28,24 +28,15 @@ export default async function MdxRemoteServer({
           return <h2 {...props} />;
         },
         a: ({ href, children, ...props }: ComponentProps<"a">) => {
-          if (href?.startsWith("/"))
-            return (
-              <Link href={href} {...props}>
-                {children}
-              </Link>
-            );
-
-          if (href?.startsWith("#"))
-            return (
-              <a href={href} {...props}>
-                {children}
-              </a>
-            );
-
           return (
-            <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+            <Link
+              variant="link"
+              prefetch={href?.startsWith("#") ? false : undefined}
+              href={href || "#"}
+              {...props}
+            >
               {children}
-            </a>
+            </Link>
           );
         },
       }}

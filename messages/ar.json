@@ -1,6 +1,6 @@
 {
   "app": {
-    "/": {
+    "/[locale]": {
       "metadata": {
         "title": "إنشاء تطبيق Next",
         "description": "تم الإنشاء باستخدام create next app"
@@ -24,9 +24,95 @@
         "needHelp": "هل تحتاج مساعدة؟",
         "tryAgainButtonLabel": "حاول مرة أخرى"
       },
-      "page": {
-        "heroSection": {
+      "components": {
+        "HeroSection": {
           "h1": "قالب Next.js"
+        },
+        "SiteHeader": {
+          "links": {
+            "blogs": "المدونات",
+            "blogExample": "مثال مدونة",
+            "admin": "الإدارة"
+          }
+        }
+      }
+    },
+    "/[locale]/blogs": {
+      "components": {
+        "BlogsSection": {
+          "title": "مقالات المدونة",
+          "description": "اكتشف أحدث الاتجاهات والنصائح وأفضل الممارسات في تطوير الويب الحديث. من مكونات واجهة المستخدم إلى أنظمة التصميم، ابق على اطلاع برؤى خبرائنا."
+        }
+      }
+    },
+    "/[locale]/admin": {
+      "components": {
+        "AdminSidebar": {
+          "NavMain": {
+            "toggle": "تبديل",
+            "groupLabel": "المنصة",
+            "links": {
+              "toggle": "تبديل",
+              "links": {
+                "playground": "ساحة التجربة",
+                "models": "النماذج",
+                "documentation": "التوثيق",
+                "settings": "الإعدادات"
+              },
+              "subLinks": {
+                "history": "السجل",
+                "starred": "المفضلة",
+                "settings": "الإعدادات",
+                "genesis": "Genesis",
+                "explorer": "المستكشف",
+                "quantum": "Quantum",
+                "introduction": "المقدمة",
+                "getStarted": "البدء",
+                "tutorials": "الدروس",
+                "changelog": "سجل التغييرات",
+                "general": "عام",
+                "team": "الفريق",
+                "billing": "الفواتير",
+                "limits": "الحدود"
+              }
+            }
+          },
+          "NavUser": {
+            "upgradeToPro": "الترقية إلى Pro",
+            "account": "الحساب",
+            "billing": "الفواتير",
+            "notifications": "الإشعارات",
+            "logOut": "تسجيل الخروج"
+          },
+          "NavProjects": {
+            "title": "المشاريع",
+            "links": {
+              "designEngineering": "هندسة التصميم",
+              "salesMarketing": "المبيعات والتسويق",
+              "travel": "السفر"
+            }
+          },
+          "NavSecondary": {
+            "links": {
+              "support": "الدعم",
+              "feedback": "الملاحظات"
+            }
+          }
+        }
+      }
+    },
+    "/[locale]/login": {
+      "components": {
+        "LoginForm": {
+          "title": "مرحباً بك في {name}",
+          "description": "ليس لديك حساب؟ <a>سجّل</a>",
+          "email": "البريد الإلكتروني",
+          "password": "كلمة المرور",
+          "login": "تسجيل الدخول",
+          "or": "أو",
+          "continueWithApple": "المتابعة مع Apple",
+          "continueWithGoogle": "المتابعة مع Google",
+          "termsOfServiceAndPrivacyPolicy": "بالنقر على متابعة، أنت توافق على <TermsOfServiceLink>شروط الخدمة</TermsOfServiceLink> و<PrivacyPolicyLink>سياسة الخصوصية</PrivacyPolicyLink>."
         }
       }
     }
@@ -36,6 +122,22 @@
       "MdxRemoteServer": {
         "tableOfContents": "جدول المحتويات"
       }
+    },
+    "ui": {
+      "sidebar": {
+        "sidebarTitle": "الشريط الجانبي",
+        "sidebarDescription": "يعرض الشريط الجانبي.",
+        "toggleSidebar": "تبديل الشريط الجانبي"
+      },
+      "sheet": {
+        "close": "إغلاق"
+      },
+      "breadcrumb": {
+        "more": "المزيد"
+      }
+    },
+    "ThemeToggle": {
+      "srOnlyLabel": "تبديل السمة"
     }
   }
 }
