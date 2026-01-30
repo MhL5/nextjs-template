@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "Blogs",
+        "description": "Explore posts de blog recentes e análises."
+      },
       "components": {
         "BlogsSection": {
           "title": "Posts do blog",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "Entrar",
+        "description": "Entre na sua conta para acessar recursos exclusivos."
+      },
       "components": {
         "LoginForm": {
           "title": "Bem-vindo ao {name}",

@@ -1,11 +1,14 @@
 import Blogpost from "@/app/[locale]/(with-navigation)/blogs/[blogSlug]/_components/Blog";
 import { validateAndSetLocale } from "@/i18n/utils/validateLocale";
+import { createLocaleAlternates } from "@/utils/metadata/createLocaleAlternates";
+import type { Metadata } from "next";
 
 const blog = {
   title: "Designing Calm Interfaces in a Noisy World",
   authorName: "John Doe",
   image: "/example.jpg",
   pubDate: "2026-01-12",
+  slug: "exampleSlug",
   description:
     "A step-by-step guide to building a modern, responsive blog using React and Tailwind CSS.",
   authorImage:
@@ -118,6 +121,20 @@ In a digital landscape filled with noise, designing calm interfaces is not a tre
 - [Why Predictability Builds Trust in UX](#)
 `,
 };
+
+export async function generateMetadata({
+  params,
+}: LayoutProps<"/[locale]">): Promise<Metadata> {
+  const { locale } = await params;
+  const validatedLocale = validateAndSetLocale(locale);
+
+  return {
+    title: blog.title,
+    description: blog.description,
+    openGraph: { url: blog.image },
+    alternates: createLocaleAlternates(validatedLocale, `/blogs/${blog.slug}`),
+  };
+}
 
 export default async function Page({
   params,

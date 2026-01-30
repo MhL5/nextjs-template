@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "Blog",
+        "description": "Terokai catatan blog dan pandangan terkini."
+      },
       "components": {
         "BlogsSection": {
           "title": "Catatan Blog",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "Log masuk",
+        "description": "Log masuk ke akaun anda untuk mengakses ciri eksklusif."
+      },
       "components": {
         "LoginForm": {
           "title": "Selamat datang ke {name}",

@@ -1,3 +1,5 @@
+"use client";
+
 import { NotFoundPage } from "@/components/FallbackPages";
 import { useTranslations } from "next-intl";
 

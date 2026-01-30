@@ -1,3 +1,5 @@
+"use client";
+
 import { LoadingPage } from "@/components/FallbackPages";
 import { useTranslations } from "next-intl";
 

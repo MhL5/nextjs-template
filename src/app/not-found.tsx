@@ -9,7 +9,7 @@ export default async function NotFound() {
   });
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider>
           <NotFoundPage

@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "Блоги",
+        "description": "Изучайте последние записи блога и материалы."
+      },
       "components": {
         "BlogsSection": {
           "title": "Записи блога",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "Войти",
+        "description": "Войдите в свой аккаунт для доступа к эксклюзивным функциям."
+      },
       "components": {
         "LoginForm": {
           "title": "Добро пожаловать в {name}",

@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "博客",
+        "description": "探索最新的博客文章和见解。"
+      },
       "components": {
         "BlogsSection": {
           "title": "博客文章",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "登录",
+        "description": "登录您的账户以访问专属功能。"
+      },
       "components": {
         "LoginForm": {
           "title": "欢迎使用 {name}",

@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "Bloglar",
+        "description": "Son blog yazılarını ve görüşleri keşfedin."
+      },
       "components": {
         "BlogsSection": {
           "title": "Blog Yazıları",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "Giriş yap",
+        "description": "Özel özelliklere erişmek için hesabınıza giriş yapın."
+      },
       "components": {
         "LoginForm": {
           "title": "{name}'e hoş geldiniz",

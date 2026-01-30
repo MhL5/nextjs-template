@@ -193,8 +193,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-[lang="ar"] {
-  --font-sans: var(--font-vazirmatn) !important;
-  --font-mono: var(--font-vazirmatn) !important;
-}

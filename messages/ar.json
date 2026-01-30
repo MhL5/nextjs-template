@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "المدونات",
+        "description": "استكشف أحدث منشورات المدونة والرؤى."
+      },
       "components": {
         "BlogsSection": {
           "title": "مقالات المدونة",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "تسجيل الدخول",
+        "description": "قم بتسجيل الدخول إلى حسابك للوصول إلى الميزات الحصرية."
+      },
       "components": {
         "LoginForm": {
           "title": "مرحباً بك في {name}",

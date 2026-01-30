@@ -86,6 +86,7 @@ export default function LocaleSwitcher({
               aria-label={`change language to ${localeName}`}
               disabled={isPending}
               variant="ghost"
+              dir="ltr"
               className="flex w-full items-center justify-start gap-4 rounded-sm px-4 capitalize"
             >
               <LocaleFlag locale={locale} localeName={localeName} />

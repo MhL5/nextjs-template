@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "ब्लॉग",
+        "description": "हाल के ब्लॉग पोस्ट और जानकारियाँ देखें।"
+      },
       "components": {
         "BlogsSection": {
           "title": "ब्लॉग पोस्ट",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "लॉग इन",
+        "description": "विशेष सुविधाओं तक पहुँचने के लिए अपने खाते में साइन इन करें।"
+      },
       "components": {
         "LoginForm": {
           "title": "{name} में आपका स्वागत है",

@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "ブログ",
+        "description": "最新のブログ記事と洞察をご覧ください。"
+      },
       "components": {
         "BlogsSection": {
           "title": "ブログ記事",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "ログイン",
+        "description": "アカウントにサインインして限定機能にアクセスしてください。"
+      },
       "components": {
         "LoginForm": {
           "title": "{name}へようこそ",

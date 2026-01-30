@@ -38,6 +38,10 @@
       }
     },
     "/[locale]/blogs": {
+      "metadata": {
+        "title": "Blogs",
+        "description": "Entdecken Sie aktuelle Blogbeiträge und Einblicke."
+      },
       "components": {
         "BlogsSection": {
           "title": "Blogbeiträge",
@@ -102,6 +106,10 @@
       }
     },
     "/[locale]/login": {
+      "metadata": {
+        "title": "Anmelden",
+        "description": "Melden Sie sich in Ihrem Konto an, um auf exklusive Funktionen zuzugreifen."
+      },
       "components": {
         "LoginForm": {
           "title": "Willkommen bei {name}",
