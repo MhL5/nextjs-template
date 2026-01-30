@@ -32,7 +32,8 @@
           "links": {
             "blogs": "Blogs",
             "blogExample": "exemplo de blog",
-            "admin": "admin"
+            "admin": "admin",
+            "login": "entrar"
           }
         }
       }

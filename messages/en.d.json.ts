@@ -35,7 +35,8 @@ declare const messages: {
           "links": {
             "blogs": "blogs",
             "blogExample": "blog example",
-            "admin": "admin"
+            "admin": "admin",
+            "login": "login"
           }
         }
       }

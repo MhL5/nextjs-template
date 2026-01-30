@@ -32,7 +32,8 @@
           "links": {
             "blogs": "ブログ",
             "blogExample": "ブログ例",
-            "admin": "管理"
+            "admin": "管理",
+            "login": "ログイン"
           }
         }
       }

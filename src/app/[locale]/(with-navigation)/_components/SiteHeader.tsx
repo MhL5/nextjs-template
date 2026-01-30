@@ -37,6 +37,10 @@ const headerLinks = [
     labelTKey: "admin",
     href: "/admin",
   },
+  {
+    labelTKey: "login",
+    href: "/login",
+  },
 ] as const satisfies HeaderLink[];
 
 export default function SiteHeader() {
