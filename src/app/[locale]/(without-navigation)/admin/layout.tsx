@@ -7,8 +7,15 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import LocaleSwitcher from "@/i18n/components/LocaleSwitcher";
+import { validateAndSetLocale } from "@/i18n/utils/validateLocale";
 
-export default function layout({ children }: LayoutProps<"/[locale]/admin">) {
+export default async function layout({
+  children,
+  params,
+}: LayoutProps<"/[locale]/admin">) {
+  const { locale } = await params;
+  validateAndSetLocale(locale);
+
   return (
     <SidebarProvider>
       <AdminSidebar />

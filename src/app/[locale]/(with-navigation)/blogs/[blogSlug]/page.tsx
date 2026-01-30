@@ -1,4 +1,5 @@
 import Blogpost from "@/app/[locale]/(with-navigation)/blogs/[blogSlug]/_components/Blog";
+import { validateAndSetLocale } from "@/i18n/utils/validateLocale";
 
 const blog = {
   title: "Designing Calm Interfaces in a Noisy World",
@@ -118,7 +119,12 @@ In a digital landscape filled with noise, designing calm interfaces is not a tre
 `,
 };
 
-export default async function Test() {
+export default async function Page({
+  params,
+}: PageProps<"/[locale]/blogs/[blogSlug]">) {
+  const { locale } = await params;
+  validateAndSetLocale(locale);
+
   return (
     <section className="grid min-h-dvh w-full place-items-center">
       <Blogpost blog={blog} className="px-4" />

@@ -104,7 +104,9 @@ export default function SiteHeader() {
             </div>
           </div>
 
-          <SiteHeaderCollapsibleContent />
+          <SiteHeaderCollapsibleContent
+            onCollapsibleItemClick={() => setShowCollapsible(false)}
+          />
         </Collapsible>
       </header>
       {/* this div is a hack, it Takes the height of the header */}
@@ -125,9 +127,9 @@ function SiteHeaderCollapsibleTrigger({
         <span className="group relative h-6 p-1">
           <span
             className={cn(
-              "absolute right-0 h-0.5 w-4 rounded-full bg-foreground transition-all duration-300",
+              "absolute end-0 h-0.5 w-4 rounded-full bg-foreground transition-all duration-300",
               showCollapsible
-                ? "top-1/2 left-1/2 w-6 -translate-x-1/2 -translate-y-1/2 rotate-45"
+                ? "end-[-95%] top-1/2 w-6 rotate-45"
                 : "top-[20%] -translate-y-1/2",
             )}
           />
@@ -137,12 +139,11 @@ function SiteHeaderCollapsibleTrigger({
               showCollapsible && "opacity-0",
             )}
           />
+          {/* bottom line */}
           <span
             className={cn(
-              "absolute left-1/2 h-0.5 w-6 -translate-x-1/2 rounded-full bg-foreground transition-all duration-300",
-              showCollapsible
-                ? "top-1/2 -translate-y-1/2 -rotate-45"
-                : "top-[80%] -translate-y-1/2",
+              "absolute top-[80%] left-1/2 h-0.5 w-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-foreground transition-all duration-300",
+              showCollapsible && "top-1/2 -rotate-45",
             )}
           />
         </span>
@@ -151,7 +152,11 @@ function SiteHeaderCollapsibleTrigger({
   );
 }
 
-function SiteHeaderCollapsibleContent() {
+function SiteHeaderCollapsibleContent({
+  onCollapsibleItemClick,
+}: {
+  onCollapsibleItemClick: () => void;
+}) {
   const t = useTranslations("app./[locale].components.SiteHeader.links");
 
   return (
@@ -162,6 +167,7 @@ function SiteHeaderCollapsibleContent() {
           variant="ghost"
           className="justify-start"
           href={href}
+          onClick={onCollapsibleItemClick}
         >
           {t(labelTKey)}
         </Link>
