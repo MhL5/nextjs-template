@@ -192,4 +192,9 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  ::selection {
+    color: var(--color-primary);
+    background: var(--color-primary-foreground);
+  }
 }
